@@ -51,7 +51,7 @@ export class Home extends React.Component<void, void> {
         </div>
 
         <div className='mt-3 mb-3'>
-          <h3 className='display-3'>We are here for you</h3>
+          <h3 className='display-3 text-xs-center'>We are here for you</h3>
           <hr />
           <p className='text-xs-center mt-2 mb-2'>We are a team of enthusiasts who believe in top notch toilet paper experience.</p>
           <div className='row'>
