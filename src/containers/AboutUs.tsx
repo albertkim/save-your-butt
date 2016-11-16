@@ -10,7 +10,8 @@ export class AboutUs extends React.Component<void, void> {
           <h3 className='display-3 text-xs-center'>We are here for you</h3>
           <hr />
           <p className='text-xs-center mt-2 mb-2'>We are a team of enthusiasts who believe in top notch toilet paper experience.</p>
-          <div className='row'>
+          <hr />
+          <div className='row mt-3'>
             <div className='col-md-4 offset-md-2'>
               <h5 className='display-5'>Albert <small className='text-muted'>Butt Enthusiast</small></h5>
               <p>Going by the online tag 'buttminer', Albert has been wiping his butt since pre-school. Albert truly believes that everybody's bathroom experiences should be top-notch and will not accept any compromises in that aspect of life.</p>

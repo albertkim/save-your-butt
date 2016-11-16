@@ -29,6 +29,12 @@ export class Home extends React.Component<void, void> {
         </div>
 
         <div className='mt-3 mb-3'>
+          <h4 className='display-4'>How it works</h4>
+          <hr />
+
+        </div>
+
+        <div className='mt-3 mb-3'>
           <h4 className='display-4'>Currently serviced areas</h4>
           <hr />
 
@@ -46,12 +52,6 @@ export class Home extends React.Component<void, void> {
             <div className='dark' />
             <h4 className='display-4'>Toronto</h4>
           </div>
-
-        </div>
-
-        <div className='mt-3 mb-3'>
-          <h4 className='display-4'>How it works</h4>
-          <hr />
 
         </div>
 

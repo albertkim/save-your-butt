@@ -4,6 +4,7 @@ import {Router, Route, IndexRoute, browserHistory} from 'react-router'
 import {App} from './App'
 import {Home} from './containers/Home'
 import {Order} from './containers/Order'
+import {AboutUs} from './containers/AboutUs'
 import './bootstrap/bootstrap.scss'
 import './index.scss'
 
@@ -12,6 +13,7 @@ ReactDOM.render((
     <Route path='/' component={App}>
       <IndexRoute component={Home} />
       <Route path='order' component={Order} />
+      <Route path='about' component={AboutUs} />
     </Route>
   </Router>
   ), document.getElementById('app')
