@@ -1,21 +1,5 @@
 #order {
 
-  .plan-option {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    border-style: solid;
-    border-width: 1px;
-    border-color: lightgray;
-    height: 20em;
-    &:hover {
-      background-color: #eceeef;
-      cursor: pointer;
-    }
-    .plan-description {
-      height: 5em;
-    }
-  }
+  
 
 }

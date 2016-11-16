@@ -5,9 +5,10 @@ import {App} from './App'
 import {Home} from './containers/Home'
 import {Order} from './containers/Order'
 import './bootstrap/bootstrap.scss'
+import './index.scss'
 
 ReactDOM.render((
-  <Router history={browserHistory}>
+  <Router onUpdate={() => window.scrollTo(0, 0)} history={browserHistory}>
     <Route path='/' component={App}>
       <IndexRoute component={Home} />
       <Route path='order' component={Order} />

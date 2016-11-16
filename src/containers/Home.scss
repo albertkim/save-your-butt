@@ -1,0 +1,43 @@
+#home {
+
+  .hero {
+    padding-top: 3em;
+    padding-bottom: 5em;
+  }
+
+  #toilet-paper {
+    height: 20em;
+    background-image: url('../images/fancy-toilet-paper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .city {
+    position: relative;
+    height: 13em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #eceeef;
+    padding-left: 2em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    * {
+      z-index: 2;
+    }
+    .dark {
+      z-index: 1;
+    }
+  }
+
+  #vancouver {
+    background-image: url('../images/vancouver.jpg');
+  }
+
+  #toronto {
+    background-image: url('../images/vancouver.jpg');
+  }
+
+}

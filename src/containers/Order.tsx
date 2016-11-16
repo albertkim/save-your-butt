@@ -12,27 +12,46 @@ export class Order extends React.Component<void, void> {
     return (
       <div className='container mt-3' id='order'>
 
-        <p>Thank you for ordering with Save Your Butt.</p>
-        <p>We promise to make this a great experience for you.</p>
-
         <h4 className='display-4 mt-3'>Select one</h4>
         <hr />
 
-        <div className='row'>
-          <div className='col-md-4 plan-option'>
-            <h4>One pack of toilet paper</h4>
-            <p className='plan-description'>Great for first-timers trying out our service.</p>
-            <button className='btn btn-primary'>Learn more</button>
-          </div>
-          <div className='col-md-4 plan-option'>
-            <h4>Bulk toilet paper</h4>
-            <p className='plan-description'>Want to fully stock up on toilet paper for the next month? This is the perfect option for you.</p>
-            <button className='btn btn-primary'>Learn more</button>
-          </div>
-          <div className='col-md-4 plan-option'>
-            <h4>Executive suite</h4>
-            <p className='plan-description'>Monthly bulk deliveries of toilet paper. Please contact us for more details.</p>
-            <button className='btn btn-primary' disabled>Coming soon...</button>
+        <div className='card-deck-wrapper'>
+          <div className='card-deck'>
+
+            <div className='card'>
+              <div className='card-block'>
+                <h4>One pack</h4>
+                <p className='card-text'>Great for first-timers trying out our service.</p>
+                <span className='text-muted'>$10</span>
+              </div>
+              <div className='card-footer'>
+                <button className='btn btn-primary mr-1'>Select</button>
+                <button className='btn btn-outline-primary'>Learn more</button>
+              </div>
+            </div>
+
+            <div className='card'>
+              <div className='card-block'>
+                <h4>Bulk toilet paper</h4>
+                <p className='card-text'>Want to fully stock up on toilet paper for the next month? This is the perfect option for you.</p>
+                <span className='text-muted'>$30</span>
+              </div>
+              <div className='card-footer'>
+                <button className='btn btn-primary mr-1'>Select</button>
+                <button className='btn btn-outline-primary'>Learn more</button>
+              </div>
+            </div>
+
+            <div className='card'>
+              <div className='card-block'>
+                <h4>Executive suite</h4>
+                <p className='card-text'>Monthly bulk deliveries of toilet paper. Please contact us for more details.</p>
+              </div>
+              <div className='card-footer'>
+                <button className='btn btn-outline-primary' disabled>Coming soon...</button>
+              </div>
+            </div>
+
           </div>
         </div>
 
@@ -46,6 +65,9 @@ export class Order extends React.Component<void, void> {
               <input className='form-control' placeholder='Street address' />
             </div>
             <div className='form-group'>
+              <input className='form-control' placeholder='Postal code' />
+            </div>
+            <div className='form-group'>
               <input className='form-control' placeholder='City' />
             </div>
             <div className='form-group'>
@@ -53,6 +75,29 @@ export class Order extends React.Component<void, void> {
             </div>
             <div className='form-group'>
               <textarea className='form-control' rows={3} placeholder='Any special delivery instructions?' />
+            </div>
+          </div>
+
+        </div>
+
+        <h4 className='display-4 mt-3'>How can we contact you?</h4>
+        <hr />
+        <p>We will inform you on the status of your order, while trying to keep unnecessary contact to a minimum.</p>
+        <div className='row'>
+
+          <div className='col-sm-6'>
+            <div className='form-group'>
+              <input className='form-control' type='email' placeholder='Email (required)' />
+            </div>
+            <div className='form-group'>
+              <input className='form-control' type='number' placeholder='Phone (required)' />
+            </div>
+            <div className='form-group'>
+              <label className='custom-control custom-checkbox'>
+                <input type='checkbox' className='custom-control-input' />
+                <span className='custom-control-indicator' />
+                <span className='custom-control-description'>Send me update SMS messages</span>
+              </label>
             </div>
           </div>
 
