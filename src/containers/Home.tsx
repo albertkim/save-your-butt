@@ -1,4 +1,5 @@
 import * as React from 'react'
+import {Link} from 'react-router'
 
 export class Home extends React.Component<void, void> {
 
@@ -8,6 +9,8 @@ export class Home extends React.Component<void, void> {
 
         <div className='jumbotron'>
           <h3 className='display-1'>Save Your Butt</h3>
+          <p>We will get you the toilet paper you need. Never worry about running out of toilet paper ever again.</p>
+          <Link to='/order'><button className='btn btn-primary'>Order now</button></Link>
         </div>
 
         <div className='row mb-3'>
@@ -64,6 +67,12 @@ export class Home extends React.Component<void, void> {
               <p>A hustler who will stop at nothing short of the best for his own butt. Calvin wants to bring his experiences to others.</p>
             </div>
           </div>
+        </div>
+
+        <div className='mt-3 mb-3'>
+          <h3 className='display-3'>Yes, we are a real business</h3>
+          <hr />
+          <p>It may sound like a joke, but we take your butt seriously.</p>
         </div>
 
       </div>
